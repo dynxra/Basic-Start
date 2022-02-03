@@ -1,3 +1,9 @@
+package KontrolYapilari;
+
+import java.util.Scanner;
+
+public class GenelTekrar {
+    public static void main(String[] args) {      
         Scanner  enterscan = new Scanner(System.in);
 
         System.out.println("Please enter first number.");
@@ -10,3 +16,5 @@
         double average = ((double) number1+number2+number3)/3;
 
         System.out.println("average of the numbers you entered: "+average);
+    }
+}
