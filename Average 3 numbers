@@ -1,0 +1,12 @@
+        Scanner  enterscan = new Scanner(System.in);
+
+        System.out.println("Please enter first number.");
+        int number1 = enterscan.nextInt();
+        System.out.println("Please enter second number.");
+        int number2 = enterscan.nextInt();
+        System.out.println("Please enter third number.");
+        int number3 = enterscan.nextInt();
+
+        double average = ((double) number1+number2+number3)/3;
+
+        System.out.println("average of the numbers you entered: "+average);
