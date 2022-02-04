@@ -1,0 +1,22 @@
+package KontrolYapilari;
+
+import java.util.Scanner;
+
+public class GenelTekrar {
+    public static void main(String[] args) {
+
+        Scanner  enterscan = new Scanner(System.in);
+                System.out.println("Please enter your factorial number");
+
+        int number = enterscan.nextInt();
+
+        int counter = 1;
+        long factorial = 1;
+        while (counter <= number){
+            factorial = factorial * number;
+            counter++;
+        }
+        System.out.println("The factorial of the number you entered: " + factorial);
+
+    }
+}
