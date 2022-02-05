@@ -1,0 +1,30 @@
+package KontrolYapilari;
+
+import java.util.Scanner;
+
+public class GenelTekrar {
+    public static void main(String[] args) {
+
+        Scanner  enterscan = new Scanner(System.in);
+                System.out.println("Please enter a nummber. Please press 0 to exit");
+        int numberWithUser = enterscan.nextInt();
+        int multiplynumber = 1;
+        int repetitions = 0;
+        boolean directQuit = true;
+
+        while (numberWithUser != 0){
+
+            System.out.println("Please enter a nummber. Please press 0 to exit");
+            multiplynumber = numberWithUser * multiplynumber;
+            numberWithUser = enterscan.nextInt();
+            repetitions++;
+            directQuit = false;
+        }
+        if (directQuit){
+            System.out.println("You exited without entering a number");
+        }else{
+            System.out.println("Multiplying the numbers you entered :"+multiplynumber);
+        }
+
+    }
+}
