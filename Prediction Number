@@ -1,0 +1,30 @@
+package KontrolYapilari;
+
+import java.util.Scanner;
+
+public class GenelTekrar {
+    public static void main(String[] args) {
+
+        Scanner  enterscan = new Scanner(System.in);
+                int randomNumber = (int)(Math.random() * 101);
+        int prediction = -1;
+        int repetitions = 0;
+
+        while (prediction != randomNumber){
+
+            System.out.println("Please enter your prediction 1 to 100: ");
+            prediction = enterscan.nextInt();
+            repetitions++;
+
+            if (prediction == randomNumber){
+                System.out.println("Congratulations you know! "+ "you found it " + repetitions + " times" );
+            }else if(prediction < randomNumber){
+                System.out.println("Your exact number is low. Please increase");
+            }else{
+                System.out.println("Your exact number is high. Please decrease");
+            }
+
+        }
+
+    }
+}
