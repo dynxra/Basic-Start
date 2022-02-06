@@ -1,0 +1,28 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class Diziler {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many numbers do you want to average?");
+        int userScanNumber = scan.nextInt();
+        int[] numberArray = new int[userScanNumber];
+        int order = 1;
+        double average;
+        int sum = 0;
+
+        for(int index=0 ; index < userScanNumber; index++){
+            System.out.println("Please enter" + order + ". number: ");
+            numberArray[index]= scan.nextInt();
+            sum = (numberArray[index])+sum;
+            order++;
+        }
+        average = sum / (double)userScanNumber;
+
+        System.out.println("Average of Numbers You Entered: " + average);
+
+
+
+    }
+}
